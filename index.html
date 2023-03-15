@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Compiler</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="/images/circle_img_bg.png">
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<h1>Online Compiler</h1>
+		</div>
+		<div class="button-group">
+			<button class="run-btn">Run</button>
+			<button class="clear-btn">Clear</button>
+		</div>
+	</div>
+	
+	<div class="editor-container">
+		<div class="code-editor">
+			<div class="code-editor_header">
+				<h2>HTML</h2>
+			</div>
+			<textarea id="html" class="code-editor_input"></textarea>
+		</div>
+		
+		<div class="code-editor">
+			<div class="code-editor_header">
+				<h2>CSS</h2>
+			</div>
+			<textarea id="css" class="code-editor_input"></textarea>
+		</div>
+		
+		<div class="code-editor">
+			<div class="code-editor_header">
+				<h2>JS</h2>
+			</div>
+			<textarea id="js" class="code-editor_input"></textarea>
+		</div>
+	</div>
+	
+	<div class="result-container">
+		<iframe id="result"></iframe>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*********HTML*********
+
+<html>
+<head></head>
+<body>
+  <h1>Helloo...</h1>
+  <button>Click here</button>
+</body>
+</html>
+
+
+
+
+
+
+*********CSS*********
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+button {
+  color: black;
+  background-color: white;
+  border: 5px solid pink;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+
+
+
+*********JS*********
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+  const body = document.querySelector('body');
+  const color = body.style.backgroundColor;
+
+  if (color === 'white') {
+    body.style.backgroundColor = 'black';
+  } else {
+    body.style.backgroundColor = 'white';
+    text.style.color = 'black';
+    h1.style.color = 'white';
+  }
+});
